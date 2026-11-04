@@ -554,6 +554,11 @@ h2 {
     }
 }
 @media(hovor:none){
+    .text span:hover{
+        transform:none;
+        color:inherit;
+        text-shadow:none;
+    }
 .text span:active{
     transform:scale(1.18) translteY(-8px);
     color:#fffffff;
