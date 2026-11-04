@@ -553,9 +553,11 @@ h2 {
         letter-spacing: -1px;
     }
 }
+@media(hovor:none){
 .text span:active{
     transform:scale(1.18) translteY(-8px);
     color:#fffffff;
     text-shadow:0 0 24px rgba(124,108,255,055);
+}
 }
     
