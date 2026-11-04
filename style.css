@@ -479,6 +479,75 @@ h2 {
     .inner-page {
         padding-top: 45px;
     }
+      h1 {
+        letter-spacing: -1px;
+    }
+}
+ .text{
+        font-size:clamp(3rem,9vw,5.5rem);
+        font-weight: 800;
+        color:#4a4e59;
+        cursor: pointer;
+        position: relative;
+        letter-spacing: -0.03em;
+        margin: 0;
+       -webkit-font-smooting:antialiased;
+    }
+    .text span{
+        display: inline-block;
+        transform: 
+        transform 0.4s cubic-bezier(0.16,1,0.3,1),
+        color 0.35s ease,
+        text-shadow 0.35s ease;
+    }
+    .text span:hover{
+    transform: scale(1.18) translateY(-8px);
+    color: #ffffff;
+    text-shadow: 0 0 24px rgba(124,108,255,0.55);
+    }
+   .card {
+    possition:relative;
+    box-sizing: border-box;
+    width: 200px;
+    height: 240px;
+    padding: 22px;
+    transition: transform .4s ease;
+    box-shadow: 0 0 0 1px #e4dfd2,
+    0 14px 28px -14px #1a140050;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+.line{
+    position: absolute;
+    background: #16140f;
+    transition: all .4s ease;
+}
+.top{
+    inset: 0 auto auto 0;
+    width: 0;
+    height:2px;
+}
+.right{
+    inset: 0 0 auto auto;
+    width: 2px;
+    height: 0;
+    transition-delay: .15s;
+}
+.bottom{
+    inset:  auto 0 0 auto;
+    width: 0;
+    height: 2px;
+    transition-delay: .3s;
+}
+.left{
+    inset: auto auto 0  0;
+    width: 2px;
+    height: 0;
+    transition-delay: .45s;
+}
+.card:hover .top,.card:hover .bottom{
+    width: 100%;
 
     h1 {
         letter-spacing: -1px;
